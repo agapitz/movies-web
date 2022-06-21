@@ -1,0 +1,170 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+/* @import "~bootstrap/dist/css/bootstrap.min.css";
+@import "~font-awesome/css/font-awesome.css"; */
+
+@import "assets/css/bootstrap.min.css";
+@import "assets/css/main.css";
+@import "assets/font-awesome/css/font-awesome.min.css";
+@import "assets/css/comp.css";
+@import "assets/css/main.css";
+.pointer {
+    cursor: pointer;
+}
+
+.modals-open {
+    overflow: hidden;
+}
+
+.content {
+    padding-top: 50px !important;
+    padding-left: 0% !important;
+}
+
+.modals {
+    position: fixed;
+    top: -100px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1050;
+    margin-top: 10%;
+    overflow: hidden;
+    -webkit-overflow-scrolling: touch;
+    outline: 0;
+}
+
+.modals.fade .modals-dialog {
+    -webkit-transition: -webkit-transform .3s ease-out;
+    -o-transition: -o-transform .3s ease-out;
+    transition: transform .3s ease-out;
+    -webkit-transform: translate3d(0, -25%, 0);
+    -o-transform: translate3d(0, -25%, 0);
+    transform: translate3d(0, -25%, 0);
+}
+
+.modals.in .modals-dialog {
+    -webkit-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.modals-open .modals {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.modals-dialog {
+    position: relative;
+    width: auto;
+    margin: 10px;
+}
+
+.modals-content {
+    position: relative;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #999;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 6px;
+    outline: 0;
+    -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+    box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+}
+
+.modals-backdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1040;
+    background-color: #000;
+}
+
+.modals-backdrop.fade {
+    filter: alpha(opacity=0);
+    opacity: 0;
+}
+
+.modals-backdrop.in {
+    filter: alpha(opacity=50);
+    opacity: .5;
+}
+
+.modals-header {
+    min-height: 16.42857143px;
+    padding: 15px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.modals-header .close {
+    margin-top: -2px;
+}
+
+.modals-title {
+    margin: 0;
+    line-height: 1.42857143;
+}
+
+.modals-body {
+    position: relative;
+    padding: 15px;
+}
+
+.modals-footer {
+    padding: 15px;
+    text-align: right;
+    border-top: 1px solid #e5e5e5;
+}
+
+.modals-footer .btn+.btn {
+    margin-bottom: 0;
+    margin-left: 5px;
+}
+
+.modals-footer .btn-group .btn+.btn {
+    margin-left: -1px;
+}
+
+.modals-footer .btn-block+.btn-block {
+    margin-left: 0;
+}
+
+.modals-scrollbar-measure {
+    position: absolute;
+    top: -9999px;
+    width: 50px;
+    height: 50px;
+    overflow: scroll;
+}
+
+.mdclose {
+    position: absolute;
+    right: 7px;
+    top: 3px;
+    z-index: 3;
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    .modals-dialog {
+        width: 600px;
+        margin: 30px auto;
+    }
+    .modals-content {
+        -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+    }
+    .modals-sm {
+        width: 300px;
+    }
+}
+
+@media (min-width: 992px) {
+    .modals-lg {
+        width: 900px;
+    }
+}

@@ -1,0 +1,16 @@
+<div class="content">
+    <div class="content-grid">
+        <div class="row">
+            <div class="col-md-3 pointer" (click)="goTo(item.id)" *ngFor="let item of movieList">
+                <div class="card-panel">
+                    <img [src]="item.thumbnail">
+                    <!-- <small>No. of Registered Users</small> -->
+                    <h4>{{item.title}}</h4>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
