@@ -6,7 +6,9 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class LocalService {
-  host: any = "http://localhost:7050";//staging
+  // host: any = "http://localhost:7050";//local
+  host: any = "https://moviesnode.herokuapp.com"
+
   idHolder: any = 0;
 
 

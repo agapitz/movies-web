@@ -17,7 +17,11 @@ export class MovieViewComponent implements OnInit {
     // this.local.pageName = "Rewards Management"
     // this.local.pageHolder = "reward"
     // console.log(this.local.rewardDetails)
+    
     this.route.params.subscribe(params => this.params = params);
+    if (this.params.id == 0) {
+      this.goToHome();
+    }
   }
   ngOnInit() {
     this.getMovie()
